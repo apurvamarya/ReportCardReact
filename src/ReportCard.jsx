@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import initialData from './data'
-import './App.css'
+import './ReportCard.css'
 
 // Single student row
 const StudentRow = ({ student, index, onMarksChange }) => {
