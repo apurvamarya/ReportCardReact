@@ -1,16 +1,28 @@
-# React + Vite
+# Report Card Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, dark-themed React application to track, update, and manage student results in real-time. This project features a responsive dashboard that automatically calculates passing statuses and aggregates class statistics.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Real-time Statistics:** Instantly calculates and displays Total Students, Total Passed, Total Failed, and Average Marks.
+* **Inline Editing:** Update student marks directly within the table, with all statistics and pass/fail badges recalculating automatically.
+* **Add New Students:** A built-in form with validation to add new students to the roster (ensures marks are between 0 and 100).
+* **Automated Grading:** Automatically assigns a **PASS** (green) or **FAIL** (red) badge based on a 40-mark threshold.
+* **Modern UI:** A clean, responsive dark-mode interface built with custom CSS.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React.js:** Functional components and React Hooks (`useState`) for state management.
+* **CSS3:** Custom styling featuring CSS Grid, Flexbox, and hover states.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+Make sure you have Node.js and npm (Node Package Manager) installed on your machine.
+
+### Installation & Setup
+
+1. **Clone the repository or create a new React app:**
+   ```bash
+   cd ReportCardReact
+   npm i
