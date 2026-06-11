@@ -24,5 +24,6 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your mach
 
 1. **Clone the repository or create a new React app:**
    ```bash
+
    cd ReportCardReact
-   npm i
+   npm install
