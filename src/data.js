@@ -1,9 +1,9 @@
 let data = [
-    {name: "Alice", marks: 90},
-    {name: "Bob", marks: 85},
-    {name: "Charlie", marks: 95},
-    {name: "David", marks: 80},
-    {name: "Eve", marks: 92}
+    {name: "Apurvam Arya", marks: 95},
+    {name: "Khushi", marks: 85},
+    {name: "Aakarsh", marks: 80},
+    {name: "Param", marks: 80},
+    {name: "Ayushi", marks: 92}
 ]
 
 export default data
