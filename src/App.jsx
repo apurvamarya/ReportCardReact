@@ -1,4 +1,3 @@
-
 import ReportCard from "./ReportCard"
 
 function App() {
@@ -6,7 +5,6 @@ function App() {
   return(
     <>
       <ReportCard />
-      
     </>
   )
 }
