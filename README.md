@@ -1,29 +1,79 @@
-# Report Card Dashboard
-
-A sleek, dark-themed React application to track, update, and manage student results in real-time. This project features a responsive dashboard that automatically calculates passing statuses and aggregates class statistics.
-
+# ReportCard
+ 
+A React component for tracking and managing student results with live inline editing, pass/fail status, and summary statistics.
+ 
 ## Features
-
-* **Real-time Statistics:** Instantly calculates and displays Total Students, Total Passed, Total Failed, and Average Marks.
-* **Inline Editing:** Update student marks directly within the table, with all statistics and pass/fail badges recalculating automatically.
-* **Add New Students:** A built-in form with validation to add new students to the roster (ensures marks are between 0 and 100).
-* **Automated Grading:** Automatically assigns a **PASS** (green) or **FAIL** (red) badge based on a 40-mark threshold.
-* **Modern UI:** A clean, responsive dark-mode interface built with custom CSS.
-
-## Technologies Used
-
-* **React.js:** Functional components and React Hooks (`useState`) for state management.
-* **CSS3:** Custom styling featuring CSS Grid, Flexbox, and hover states.
-
+ 
+- **Add students** — Enter a name and marks (0–100) to add a student to the list
+- **Inline marks editing** — Update any student's marks directly in the table; pass/fail status updates instantly
+- **Live stats** — Total students, passed, failed, and class average recalculate on every change
+- **Input validation** — Catches empty names, non-numeric marks, and out-of-range values before they're added
+## Project Structure
+ 
+```
+src/
+├── ReportCard.jsx   # Main component (StudentRow, StatCard, ReportCard)
+├── ReportCard.css   # Styles
+└── data.js          # Initial student data
+```
+ 
 ## Getting Started
-
+ 
 ### Prerequisites
-Make sure you have Node.js and npm (Node Package Manager) installed on your machine.
-
-### Installation & Setup
-
-1. **Clone the repository or create a new React app:**
-   ```bash
-
-   cd ReportCardReact
-   npm install
+ 
+- Node.js 16+
+- npm or yarn
+### Installation
+ 
+```bash
+git clone https://github.com/your-username/report-card.git
+cd report-card
+npm install
+```
+ 
+### Running locally
+ 
+```bash
+npm run dev
+```
+ 
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+ 
+## Usage
+ 
+### Adding a student
+ 
+Fill in the name and marks fields and click **Add Student**. Marks must be a number between 0 and 100.
+ 
+### Editing marks
+ 
+Click directly into the marks field in the table and type a new value. The pass/fail badge and all stats update immediately.
+ 
+### Pass/Fail threshold
+ 
+A student **passes** if their marks are **≥ 40**. This can be changed in `ReportCard.jsx`:
+ 
+```js
+const isPassing = student.marks >= 40  // adjust threshold here
+```
+ 
+## Seeding initial data
+ 
+Edit `src/data.js` to pre-populate the table with your own students:
+ 
+```js
+const initialData = [
+  { name: "Alice", marks: 88 },
+  { name: "Bob",   marks: 34 },
+]
+ 
+export default initialData
+```
+ 
+## Tech Stack
+ 
+- [React](https://react.dev/) — UI and state management (`useState`)
+- CSS — custom styling via `ReportCard.css`
+## License
+ 
+MIT
