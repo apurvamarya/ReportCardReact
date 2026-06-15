@@ -1,6 +1,6 @@
 # ReportCard
  
-A React component for tracking and managing student results with live inline editing, pass/fail status, and summary statistics.
+A React app for tracking and managing student results with live inline editing, pass/fail status, and summary statistics.
  
 ## Features
  
@@ -26,8 +26,8 @@ src/
 ### Installation
  
 ```bash
-git clone https://github.com/your-username/report-card.git
-cd report-card
+git clone https://github.com/apurvamarya/ReportCardReact.git
+cd ReportCardReact
 npm install
 ```
  
@@ -74,6 +74,3 @@ export default initialData
  
 - [React](https://react.dev/) — UI and state management (`useState`)
 - CSS — custom styling via `ReportCard.css`
-## License
- 
-MIT
